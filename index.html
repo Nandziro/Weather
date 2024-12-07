@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo-img" src="./logo.png" alt="">
+        </div>
+        <h1 class="header__title">Check weather</h1>
+    </header>
+    <div class="weather__container">
+        <h2 class="weather__text">Weather</h2>
+        <input placeholder="Введіть назву міста" type="text" class="weather__response">
+        <button class="weather__button">Дізнатися погоду</button>
+        <div class="weather__create"></div>
+    </div>
+    <div class="comment__box">
+        <h2>Залиште свій відгук</h2>
+        <input class="comment__name" placeholder="Введіть своє ім'я" type="text" required>
+        <input type="number" class="comment__rating" placeholder="Оцінка (1-5)" min="1" max="5" required>
+        <textarea class="comment__text" placeholder="Напишіть свій коментар" name="" required></textarea>
+        <button class="comment__btn">Відіслати відгук</button>
+        <div class="reviews">
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./comment.js"></script>
+</body>
+</html>
